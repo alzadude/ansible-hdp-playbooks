@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  connection: local
+  sudo: no
+
+  roles:
+    - { role: virt-import, 
+        ova_path: ~/Downloads/Sandbox_HDP_2.2.4_virtualbox.ova,
+        ova_dir: ~/Downloads/Sandbox_HDP_2.2.4_virtualbox
+      }
+    - { role: virt-mount,
+        domain_name: "Hortonworks Sandbox with HDP 2.2.4",
+        mount_dir: ~/Projects
+      }
+    - hdp-sandbox-virt-guest

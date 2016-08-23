@@ -1,0 +1,6 @@
+- src: https://github.com/alzadude/ansible-virt-import
+  name: virt-import
+
+- src: https://github.com/alzadude/ansible-virt-mount
+  name: virt-mount
+
